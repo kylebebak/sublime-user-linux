@@ -6,6 +6,9 @@
 		"node_modules",
 		".git"
 	],
+	"binary_file_patterns": [
+		"*.svg"
+	],
 	"font_size": 11,
 	"ignored_packages":
 	[
