@@ -1,0 +1,35 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"ApplySyntax",
+		"BracketHighlighter",
+		"ColorHelper",
+		"DocBlockr",
+		"Dockerfile Syntax Highlighting",
+		"Evaluate",
+		"GitGutter",
+		"GitSavvy",
+		"Jedi - Python autocompletion",
+		"JsPrettier",
+		"MoveTab",
+		"Open URL",
+		"Package Control",
+		"PackageDev",
+		"Pretty JSON",
+		"ProjectManager",
+		"Requester",
+		"Sass",
+		"SideBarEnhancements",
+		"sublack",
+		"SublimeLinter",
+		"SublimeLinter-contrib-mypy",
+		"SublimeLinter-eslint",
+		"SublimeLinter-flake8",
+		"TypeScript",
+		"Wrap Plus"
+	]
+}
