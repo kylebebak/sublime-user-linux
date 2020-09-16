@@ -87,7 +87,7 @@
   },
 
   // files
-  { "keys": ["ctrl+alt+r", "ctrl+alt+r"], "command": "reveal_in_side_bar" },
+  { "keys": ["ctrl+alt+shift+r", "ctrl+alt+shift+r"], "command": "reveal_in_side_bar" },
 
 
   // symbols and navigation
@@ -247,6 +247,18 @@
   // select text excluding brackets
   {
     "keys": ["ctrl+alt+pageup"],
+    "command": "bh_async_key",
+    "args": {
+      "no_outside_adj": null,
+      "lines": true,
+      "plugin": {
+        "type": ["__all__"],
+        "command": "bh_modules.bracketselect",
+      }
+    }
+  },
+  {
+    "keys": ["ctrl+alt+pagedown"],
     "command": "bh_async_key",
     "args": {
       "no_outside_adj": null,

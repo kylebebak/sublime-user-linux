@@ -1,4 +1,8 @@
 {
+	"binary_file_patterns":
+	[
+		"*.svg"
+	],
 	"close_windows_when_empty": false,
 	"ensure_newline_at_eof_on_save": true,
 	"folder_exclude_patterns":
@@ -6,10 +10,7 @@
 		"node_modules",
 		".git"
 	],
-	"binary_file_patterns": [
-		"*.svg"
-	],
-	"font_size": 11,
+	"font_size": 12,
 	"ignored_packages":
 	[
 		"Vintage"
