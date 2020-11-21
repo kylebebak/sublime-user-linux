@@ -6,6 +6,28 @@
   // navigation
 
   {
+    "keys": ["pageup"],
+    "command": "move_to",
+    "args": {"extend": false, "to": "bof"},
+  },
+  {
+    "keys": ["pagedown"],
+    "command": "move_to",
+    "args": {"extend": false, "to": "eof"},
+  },
+
+  {
+    "keys": ["shift+pageup"],
+    "command": "move_to",
+    "args": {"extend": true, "to": "bof"},
+  },
+  {
+    "keys": ["shift+pagedown"],
+    "command": "move_to",
+    "args": {"extend": true, "to": "eof"},
+  },
+
+  {
     "keys": ["ctrl+up"],
     "command": "move_to",
     "args": {"extend": false, "to": "bof"},
@@ -42,11 +64,11 @@
   { "keys": ["ctrl+shift+equals"], "command": "jump_forward" },
 
   {
-    "keys": ["alt+pageup"],
+    "keys": ["ctrl+alt+up"],
     "command": "swap_line_up",
   },
   {
-    "keys": ["alt+pagedown"],
+    "keys": ["ctrl+alt+down"],
     "command": "swap_line_down",
   },
 
@@ -69,12 +91,12 @@
 
   // multiple cursors
   {
-    "keys": ["ctrl+alt+up"],
+    "keys": ["alt+pageup"],
     "command": "select_lines",
     "args": { "forward": false }
   },
   {
-    "keys": ["ctrl+alt+down"],
+    "keys": ["alt+pagedown"],
     "command": "select_lines",
     "args": { "forward": true }
   },
@@ -87,7 +109,7 @@
   },
 
   // files
-  { "keys": ["ctrl+alt+shift+r", "ctrl+alt+shift+r"], "command": "reveal_in_side_bar" },
+  { "keys": ["alt+r", "alt+r"], "command": "reveal_in_side_bar" },
 
 
   // symbols and navigation
