@@ -237,6 +237,10 @@
   "keys": ["ctrl+alt+j"],
   "command": "git_gutter_next_change"
   },
+  {
+  "keys": ["ctrl+alt+k"],
+  "command": "git_gutter_prev_change"
+  },
 
   // Project Manager
   {
