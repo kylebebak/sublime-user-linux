@@ -36,6 +36,6 @@
 		"SublimeLinter-eslint",
 		"SublimeLinter-flake8",
 		"TypeScript",
-		"Wrap Plus"
-	]
+		"Wrap Plus",
+	],
 }
