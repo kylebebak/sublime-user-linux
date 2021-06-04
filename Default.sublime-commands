@@ -51,10 +51,4 @@
     "command": "package_reloader_reload",
     "args": { "pkg_name": "TypeScript" }
   },
-
-  {
-    "caption": "Reload/Restart SublimeJEDI Package",
-    "command": "package_reloader_reload",
-    "args": { "pkg_name": "Jedi - Python autocompletion" }
-  },
 ]
