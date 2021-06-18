@@ -3,7 +3,9 @@
   // Built-in
   //
 
-  // navigation
+  { "keys": ["ctrl+k", "ctrl+t"], "command": "title_case"},
+
+  // Navigation
 
   {
     "keys": ["pageup"],
@@ -49,8 +51,6 @@
     "args": {"extend": true, "to": "eof"},
   },
 
-  //
-
   {
     "keys": ["ctrl+home"],
     "command": "prev_view",
@@ -89,7 +89,7 @@
     }
   },
 
-  // multiple cursors
+  // Multiple Cursors
   {
     "keys": ["alt+pageup"],
     "command": "select_lines",
@@ -101,18 +101,18 @@
     "args": { "forward": true }
   },
 
-  // selection
+  // Selection
   {
     "keys": ["ctrl+shift+a"],
     "command": "expand_selection",
     "args": { "to": "tag" }
   },
 
-  // files
+  // Files
   { "keys": ["alt+r", "alt+r"], "command": "reveal_in_side_bar" },
 
 
-  // symbols and navigation
+  // Symbols And Navigation
   {
     "keys": ["ctrl+e"],
     "command": "goto_definition",
@@ -249,7 +249,7 @@
     "args": {"action": "new"}
   },
 
-  // wrap plus
+  // Wrap Plus
   { "keys": ["alt+w"], "command": "wrap_lines_plus", "args": { "width": 80 } },
 
   // Prettier
@@ -266,11 +266,11 @@
   // file_path_and_line_number
   {
     "keys": ["ctrl+alt+b", "ctrl+alt+b"],
-    "command": "copy_file_path_and_line_number"
+    "command": "copy_file_path_and_line_number",
+    "args": { "include_text": true }
   },
 
   // BracketHighlighter
-  // select text excluding brackets
   {
     "keys": ["ctrl+alt+pageup"],
     "command": "bh_async_key",
@@ -296,26 +296,22 @@
     }
   },
 
-  // TypeScript
+  // auto-pair grave accents around selected text
   {
-    "keys": ["ctrl+shift+e"],
-    "command": "typescript_go_to_definition",
+    "keys": ["`"],
+    "command": "insert_snippet",
+    "args": { "contents": "`${0:$SELECTION}`" },
     "context": [
       {
-        "key": "selector",
+        "key": "setting.auto_match_enabled",
         "operator": "equal",
-        "operand": "source.ts | source.tsx"
-      }
-    ]
-  },
-  {
-    "keys": ["ctrl+alt+e"],
-    "command": "typescript_go_to_type_definition",
-    "context": [
+        "operand": true
+      },
       {
-        "key": "selector",
+        "key": "selection_empty",
         "operator": "equal",
-        "operand": "source.ts | source.tsx"
+        "operand": false,
+        "match_all": true
       }
     ]
   },
@@ -345,6 +341,10 @@
   {
     "keys": ["ctrl+shift+e"],
     "command": "lsp_symbol_definition",
-    "context": [{ "key": "selector", "operator": "equal", "operand": "source.python" }]
+  },
+
+  {
+    "keys": ["alt+e"],
+    "command": "lsp_symbol_type_definition",
   },
 ]

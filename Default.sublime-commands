@@ -6,7 +6,8 @@
 
   {
     "caption": "Custom: Copy File Path And Line Number",
-    "command": "copy_file_path_and_line_number"
+    "command": "copy_file_path_and_line_number",
+    "args": { "include_text": true }
   },
 
   { "caption": "Custom: Show Scope Name", "command": "show_scope_name" },
@@ -44,11 +45,5 @@
   {
     "caption": "Clipboard: Paste From History",
     "command": "paste_from_history",
-  },
-
-  {
-    "caption": "Reload/Restart TypeScript Package",
-    "command": "package_reloader_reload",
-    "args": { "pkg_name": "TypeScript" }
   },
 ]
