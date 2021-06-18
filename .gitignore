@@ -1,0 +1,15 @@
+# ignore everything
+/*
+
+# except...
+!.gitignore
+!README.md
+!/snippets
+!*.py
+!*.sublime-build
+!*.sublime-keymap
+!*.sublime-commands
+!Package Control.sublime-settings
+
+# make sure to ignore this guy, it has my GitHub API token
+GitSavvy.sublime-settings
