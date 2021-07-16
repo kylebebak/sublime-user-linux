@@ -341,5 +341,11 @@
   {
     "keys": ["alt+e"],
     "command": "lsp_symbol_type_definition"
-  }
+  },
+
+  // Requester
+  {
+    "keys": ["ctrl+alt+h"],
+    "command": "requester_history"
+  },
 ]
