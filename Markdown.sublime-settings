@@ -1,0 +1,17 @@
+{
+  "extensions":
+  [
+    "md",
+    "mdown"
+  ],
+  "line_numbers": true,
+  "tab_size": 2,
+  "wrap_width": 100,
+  "color_scheme": "MarkdownEditor.sublime-color-scheme",
+  "rulers":
+  [
+    100
+  ],
+  "line_padding_bottom": 2,
+  "line_padding_top": 2,
+}
