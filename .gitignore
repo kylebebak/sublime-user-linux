@@ -13,6 +13,7 @@
 !LSP.sublime-settings
 !nginx.sublime-settings
 !Markdown.sublime-settings
+!sublack.sublime-settings
 
 # make sure to ignore this guy, it has my GitHub API token
 GitSavvy.sublime-settings
