@@ -14,7 +14,11 @@
 	"font_size": 12,
 	"ignored_packages":
 	[
+		"LSP-json",
+		"LSP-pyright",
+		"LSP-typescript",
 		"Markdown",
+		"SideBarEnhancements",
 		"Vintage",
 	],
 	"rulers":
